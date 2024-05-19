@@ -1,3 +1,6 @@
 {
   "files.autoSave": "afterDelay",
+  "[terraform]": {
+    "editor.formatOnSave": true
+  }
 }
