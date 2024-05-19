@@ -1,0 +1,8 @@
+# Remove terraform releated files
+.terraform
+.terraform.*
+*.tfstate
+*.tfstate.backup
+
+# OSX
+.DS_Store
