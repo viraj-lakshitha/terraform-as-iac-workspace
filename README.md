@@ -7,3 +7,11 @@
 2. Plan the script with `terraform plan`: It will show the changes that will be applied.
 3. Apply the script with `terraform apply`: It will apply the changes to the infrastructure.
 4. Destroy the script with `terraform destroy`: It will destroy the infrastructure.
+
+---
+
+Documentations
+
+- [Kubernetes Provider](https://registry.terraform.io/providers/hashicorp/kubernetes/latest)
+- [AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+- [Terraform](https://developer.hashicorp.com/terraform/docs)
