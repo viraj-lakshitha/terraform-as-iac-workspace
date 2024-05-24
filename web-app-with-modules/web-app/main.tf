@@ -31,7 +31,7 @@ module "web_app_1" {
   # Variable for Module
   bucket_prefix    = "researchdev-dev"
   domain           = "researchdev-dev.dev"
-  app_name         = "researchdev-dev"
+  app_name         = "researchdev"
   environment_name = "dev"
   instance_type    = "t3.nano"
   create_dns_zone  = true
@@ -46,7 +46,7 @@ module "web_app_2" {
   # Variable for Module
   bucket_prefix    = "researchdev-staging"
   domain           = "researchdev-staging.dev"
-  app_name         = "researchdev-staging"
+  app_name         = "researchdev"
   environment_name = "staging"
   instance_type    = "t3.nano"
   create_dns_zone  = true
