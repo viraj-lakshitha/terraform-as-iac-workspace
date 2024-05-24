@@ -221,8 +221,19 @@ resource "aws_db_instance" "web_app_rds_db" {
   engine                     = "postgres"
   engine_version             = "12"
   instance_class             = "db.t2.micro"
-  name                       = var.rds_db_name
+  db_name                    = var.rds_db_name
   username                   = var.rds_db_user
   password                   = var.rds_db_password
   skip_final_snapshot        = true
+
+  lifecycle {
+    prevent_destroy = true # prevent from destorying this resource
+    ignore_changes = [ # ask to ignore the tag changes
+      tag
+    ]
+
+    # if any change of applying new changes, 
+    # so this make sure to create the new db instance before terminating the previous instance (zero-downtime)
+    create_before_destroy = true
+  }
 }
