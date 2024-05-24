@@ -58,3 +58,20 @@ module "web-app" {
   source = "http://example.com/modules/web-app"
 }
 ```
+
+### Demo
+
+```
+├── README.md
+├── web-app
+│   └── main.tf
+└── web-app-module
+    ├── compute.tf
+    ├── database.tf
+    ├── dns.tf
+    ├── main.tf
+    ├── network.tf
+    ├── output.tf
+    ├── storage.tf
+    └── variables.tf
+```    

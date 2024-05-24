@@ -4,6 +4,7 @@
 *.tfstate
 *.tfstate.backup
 *.tfvars
+*.tfstate.d
 
 # OSX
 .DS_Store
